@@ -9,7 +9,7 @@ body {
   line-height: 2rem;
   overflow: hidden;
   margin: 0;
-  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-family: 'Spoqa Han Sans Neo', sans-serif;
   font-weight: 400;
   color: oklch(90% 0 0/1);
   word-break: keep-all;
@@ -223,7 +223,7 @@ canvas {
   grid-template-columns: repeat(1, max-content) minmax(15.5ch, 1fr);
   row-gap: 0.5em;
   -moz-column-gap: 1.5em;
-       column-gap: 1.5em;
+  column-gap: 1.5em;
 }
 .table--col-3,
 .grid--col-3 {
@@ -289,4 +289,69 @@ canvas {
 }
 .table::-webkit-scrollbar-thumb {
   background-color: oklch(60% 0 0/1);
+}
+
+.map-container {
+  position: relative;
+  display: inline-block;
+}
+
+.map-container img {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.map-links {
+  position: absolute;
+  top: 53%; /* 이미지 위에서부터 10% 지점에 위치 */
+  left: 52%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7); /* 배경색을 반투명으로 설정 */
+  padding: 5px;
+  border-radius: 8px;
+}
+.map-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.map-links2 {
+  position: absolute;
+  top: 73%; /* 이미지 위에서부터 10% 지점에 위치 */
+  left: 30%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7); /* 배경색을 반투명으로 설정 */
+  padding: 5px;
+  border-radius: 8px;
+}
+.map-links2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.map-links3 {
+  position: absolute;
+  top: 73%; /* 이미지 위에서부터 10% 지점에 위치 */
+  left: 72%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7); /* 배경색을 반투명으로 설정 */
+  padding: 5px;
+  border-radius: 8px;
+}
+.map-links3 a {
+  text-decoration: none;
+  color: #000;
 }
